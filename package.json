@@ -1,6 +1,7 @@
 {
   "name": "openplan_assignment",
   "private": true,
+  "type": "commonjs",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",

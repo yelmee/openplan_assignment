@@ -1,0 +1,49 @@
+.result-container {
+  height: 100vh;
+
+  .wrapper {
+    background-color: grey;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+    .header {
+      .text {
+        text-align: center;
+        padding: 17px;
+        font-size: 15px;
+      }
+    }
+
+    .result-content {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+
+      .result-wrapper {
+        width: 100vw;
+        margin: 0 20px;
+        height: 440px;
+        flex: 1 1;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+
+      .img {
+        background-color: rosybrown;
+        width: 600px;
+      }
+
+      .info {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.intro-container{
+    height: 100vh;
+
+    .wrapper{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .header{
+            .text{
+                text-align: center;
+                padding: 17px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .content-wrapper{
+
+        .text{
+            font-size: 32px;
+            white-space: break-spaces;
+            text-align: center;
+
+        }
+    }
+}

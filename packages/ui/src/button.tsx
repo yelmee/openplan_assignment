@@ -1,12 +1,13 @@
-import './button.css';
+import "./button.css";
 
 export interface ButtonProps {
   /** Is this the principal call to action on the page? */
   primary?: boolean;
   /** What background color to use */
   backgroundColor?: string;
+  textColor?: string;
   /** How large should the button be? */
-  size?: 'small' | 'medium' | 'large';
+  size?: "sm" | "md" | "lg";
   /** Button contents */
   label: string;
   /** Optional click handler */
@@ -15,19 +16,20 @@ export interface ButtonProps {
 
 /** Primary UI component for user interaction */
 export const Button = ({
-                         size = 'medium',
-                         backgroundColor,
-                         label,
-                         ...props
-                       }: ButtonProps) => {
+  size = "lg",
+  backgroundColor,
+  textColor,
+  label,
+  ...props
+}: ButtonProps) => {
   return (
-      <button
-          type="button"
-          className={['storybook-button', `storybook-button--${size}`].join(' ')}
-          style={{ backgroundColor }}
-          {...props}
-      >
-        {label}
-      </button>
+    <button
+      type="button"
+      className={["storybook-button", `storybook-button--${size}`].join(" ")}
+      style={{ backgroundColor, color: textColor }}
+      {...props}
+    >
+      {label}
+    </button>
   );
 };

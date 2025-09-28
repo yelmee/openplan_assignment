@@ -1,0 +1,22 @@
+.storybook-box {
+  display: flex;
+
+  border-radius: 12px;
+  background-color: white;
+  padding: 20px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1;
+    font-size: 15px;
+
+    .label {
+    }
+
+    .text {
+      opacity: 50%;
+    }
+  }
+}
