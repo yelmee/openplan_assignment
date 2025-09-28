@@ -1,22 +1,28 @@
 .storybook-box {
   display: flex;
-
+  flex-wrap: wrap;
   border-radius: 12px;
   background-color: white;
   padding: 20px;
 
   .content {
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1 1;
     font-size: 15px;
 
-    .label {
-    }
-
     .text {
       opacity: 50%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      white-space: nowrap;
+      /*padding-left: 110px;*/
+    }
+    .underline {
+      cursor: pointer;
     }
   }
 }

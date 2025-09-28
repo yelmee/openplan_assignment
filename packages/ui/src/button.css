@@ -8,8 +8,8 @@
   width: 335px;
   margin: 40px 0;
 
-  :hover {
-    opacity: 80%;
+  &:hover {
+    opacity: 50%;
   }
 }
 .storybook-button--sm {

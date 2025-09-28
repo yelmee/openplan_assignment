@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import "./result.css";
-import { Box } from "@repo/ui/box";
 import { getResult } from "../../action/getResult";
 import { notFound } from "next/navigation";
 import { JSX } from "react";
+import { Box } from "../../component/box";
 
 export default async function Page(): Promise<JSX.Element> {
   const headerText = "지원자분 성함을 적어주세요";
@@ -44,6 +44,8 @@ export default async function Page(): Promise<JSX.Element> {
                 text2={String(data.height)}
               />
               <Box
+                onClick1={true}
+                onClick2={true}
                 label1={"url"}
                 text1={data.url}
                 label2={"download_url"}

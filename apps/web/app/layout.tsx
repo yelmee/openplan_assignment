@@ -3,12 +3,16 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { JSX } from "react";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+// });
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+});
+const Pretendard = localFont({
+  src: "./fonts/Pretendard-Black.woff",
   variable: "--font-geist-mono",
 });
 
@@ -24,7 +28,7 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${Pretendard.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>

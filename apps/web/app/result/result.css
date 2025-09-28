@@ -1,10 +1,8 @@
 .result-container {
-  height: 100vh;
+  background-color: grey;
 
   .wrapper {
-    background-color: grey;
     display: flex;
-    height: 100vh;
     flex-direction: column;
 
     .header {
@@ -23,8 +21,7 @@
 
       .result-wrapper {
         width: 100vw;
-        margin: 0 20px;
-        height: 440px;
+        /*margin: 0 20px;*/
         flex: 1 1;
 
         display: flex;
@@ -33,11 +30,13 @@
       }
 
       .img {
-        background-color: rosybrown;
+        border-radius: 12px;
         width: 600px;
       }
 
       .info {
+        gap: 12px;
+        /*max-width: 300px;*/
         margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
